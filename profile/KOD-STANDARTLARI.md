@@ -44,7 +44,7 @@ Board kodlarında ilk rakam baskın elektronik işlevi göstermelidir:
 - `B3xx` → Giriş / arayüz kartları
 - `B4xx` → Çıkış / sürücü kartları
 - `B5xx` → Sensör arayüz / sensör kartları
-- `B6xx` → Rezerve
+- `B6xx` → Güvenlik kartları (security segment; tarihsel kullanım nedeniyle aktif aile)
 - `B7xx` → Rezerve
 - `B8xx` → Güç yönetimi / besleme kartları
 - `B9xx` → Ana kart / backplane / bağlantı kartları
@@ -53,6 +53,7 @@ Board kodlarında ilk rakam baskın elektronik işlevi göstermelidir:
 
 - Repo adı, kart kodunun kanonik formunu mümkün olduğunca korumalıdır.
 - Grup kodu parça adına göre değil, baskın teknik işleve göre seçilmelidir.
-- Rezerve alanlar (`B6xx`, `B7xx`) aktif ürün ailesi gibi kullanılmamalıdır.
+- `B6xx` ailesi güvenlik odaklı kartlar için kullanılabilir; bu tarihsel karar standartla hizalanmıştır.
+- `B7xx` alanı halen rezerve kabul edilmelidir.
 - Platform eki gerekiyorsa kısa ve tutarlı kullanılmalıdır. Örnek: `-PCIe`.
 - Bu dosya kısa organizasyon özeti içindir; detayların kaynağı web üzerindeki kanonik dokümandır.
