@@ -65,18 +65,32 @@ This organization is evolving into the main home for Akkoyun hardware design wor
 
 ## Repository Map
 
+A compact inventory view is easier to read than one giant graph.
+
+### Top-Level Structure
+
 ```mermaid
 graph TD
     ORG[Akkoyun-Hardware]
+    ORG --> MOD[Module Repositories]
+    ORG --> PROD[Product Repositories]
+    ORG --> REF[Shared References]
 
-    ORG --> TEMPLATE[Hardware_Template]
-    ORG --> LEGACY[Electronic_Modules - legacy archive source]
-    ORG --> ORGFILES[.github]
+    REF --> TEMPLATE[Hardware_Template]
+    REF --> ORGFILES[.github]
+    REF --> LEGACY[Electronic_Modules]
+```
 
-    ORG --> B0[B0XX — MCU Segment]
+### Module Segments
+
+```mermaid
+graph TD
+    MOD[Module Repositories]
+
+    MOD --> B0[B0XX MCU]
     B0 --> B001[B001]
 
-    ORG --> B1[B1XX — IoT Segment]
+    MOD --> B1[B1XX IoT]
     B1 --> B100[B100]
     B1 --> B101[B101]
     B1 --> B102[B102]
@@ -92,20 +106,27 @@ graph TD
     B1 --> B155[B155]
     B1 --> B182[B182]
 
-    ORG --> B2[B2XX — Metering Segment]
+    MOD --> B2[B2XX Metering]
     B2 --> B201[B201]
     B2 --> B202[B202]
 
-    ORG --> B3[B3XX — Input / Interface Segment]
+    MOD --> B3[B3XX Input/Interface]
     B3 --> B302[B302]
     B3 --> B303[B303]
 
-    ORG --> B4[B4XX — Driver Segment]
+    MOD --> B4[B4XX Drivers]
     B4 --> B402[B402]
     B4 --> B403[B403]
     B4 --> B404[B404]
+```
 
-    ORG --> B5[B5XX — Sensor Segment]
+### Sensor, Power, and Motherboard Segments
+
+```mermaid
+graph TD
+    MOD[Module Repositories]
+
+    MOD --> B5[B5XX Sensors]
     B5 --> B501[B501]
     B5 --> B502[B502]
     B5 --> B503[B503]
@@ -115,31 +136,34 @@ graph TD
     B5 --> B510[B510]
     B5 --> B520[B520]
 
-    ORG --> B6[B6XX — Legacy / Misc Segment]
+    MOD --> B6[B6XX Legacy/Misc]
     B6 --> B601[B601]
 
-    ORG --> B8[B8XX — Power Source Segment]
+    MOD --> B8[B8XX Power]
     B8 --> B801[B801]
     B8 --> B802[B802]
 
-    ORG --> B9[B9XX — Mother Board Segment]
+    MOD --> B9[B9XX Motherboards]
     B9 --> B901[B901]
     B9 --> B902[B902]
     B9 --> B903[B903]
     B9 --> B905[B905]
     B9 --> B910[B910]
-
-    ORG --> PSEG[PXXX — Product / System Repositories]
-    PSEG --> P101[P101]
-    PSEG --> P401[P401]
-    PSEG --> P402[P402]
-    PSEG --> P403[P403]
-    PSEG --> P511[P511]
-    PSEG --> P520[P520]
-    PSEG --> P902[P902]
 ```
 
-This map is intended as a quick visual inventory of the organization structure: board families, product/system repositories, and key supporting repositories.
+### Product / System Repositories
+
+```mermaid
+graph TD
+    PROD[Product Repositories]
+    PROD --> P101[P101]
+    PROD --> P401[P401]
+    PROD --> P402[P402]
+    PROD --> P403[P403]
+    PROD --> P511[P511]
+    PROD --> P520[P520]
+    PROD --> P902[P902]
+```
 
 ## 📚 Teknik Referanslar
 
