@@ -45,6 +45,11 @@ Reference template:
 
 - [`Hardware_Template`](https://github.com/Akkoyun-Hardware/Hardware_Template)
 
+Naming and classification standard:
+
+- [`KOD-STANDARTLARI.md`](./KOD-STANDARTLARI.md)
+- Canonical source: <https://www.akkoyun.net/acik-kaynak/kod-standartlari/>
+
 ## Working Principles
 
 - Keep source, documentation, and production outputs clearly separated.
