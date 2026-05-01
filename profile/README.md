@@ -62,3 +62,9 @@ Naming and classification standard:
 ## Notes
 
 This organization is evolving into the main home for Akkoyun hardware design work.
+
+
+## 📚 Teknik Referanslar
+
+- [PCB Technical References](./REFERENCES/PCB/README.md)
+
