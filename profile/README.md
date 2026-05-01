@@ -67,11 +67,7 @@ This organization is evolving into the main home for Akkoyun hardware design wor
 
 ```mermaid
 mindmap
-  root((Akkoyun-Hardware))
-    Shared References
-      Hardware_Template
-      .github
-      Electronic_Modules
+  root((Hardware Map))
     B0XX MCU
       B001
     B1XX IoT
