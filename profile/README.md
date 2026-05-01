@@ -70,7 +70,7 @@ graph TD
     ORG[Akkoyun-Hardware]
 
     ORG --> TEMPLATE[Hardware_Template]
-    ORG --> LEGACY[Electronic_Modules (legacy archive source)]
+    ORG --> LEGACY[Electronic_Modules - legacy archive source]
     ORG --> ORGFILES[.github]
 
     ORG --> B0[B0XX — MCU Segment]
