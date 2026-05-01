@@ -70,7 +70,7 @@ A compact inventory view is easier to read than one giant graph.
 ### Top-Level Structure
 
 ```mermaid
-graph TD
+graph LR
     ORG[Akkoyun-Hardware]
     ORG --> MOD[Module Repositories]
     ORG --> PROD[Product Repositories]
@@ -84,7 +84,7 @@ graph TD
 ### Module Segments
 
 ```mermaid
-graph TD
+graph LR
     MOD[Module Repositories]
 
     MOD --> B0[B0XX MCU]
@@ -123,7 +123,7 @@ graph TD
 ### Sensor, Power, and Motherboard Segments
 
 ```mermaid
-graph TD
+graph LR
     MOD[Module Repositories]
 
     MOD --> B5[B5XX Sensors]
@@ -154,7 +154,7 @@ graph TD
 ### Product / System Repositories
 
 ```mermaid
-graph TD
+graph LR
     PROD[Product Repositories]
     PROD --> P101[P101]
     PROD --> P401[P401]
