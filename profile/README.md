@@ -65,104 +65,68 @@ This organization is evolving into the main home for Akkoyun hardware design wor
 
 ## Repository Map
 
-A compact inventory view is easier to read than one giant graph.
-
-### Top-Level Structure
-
 ```mermaid
-graph LR
-    ORG[Akkoyun-Hardware]
-    ORG --> MOD[Module Repositories]
-    ORG --> PROD[Product Repositories]
-    ORG --> REF[Shared References]
-
-    REF --> TEMPLATE[Hardware_Template]
-    REF --> ORGFILES[.github]
-    REF --> LEGACY[Electronic_Modules]
-```
-
-### Module Segments
-
-```mermaid
-graph LR
-    MOD[Module Repositories]
-
-    MOD --> B0[B0XX MCU]
-    B0 --> B001[B001]
-
-    MOD --> B1[B1XX IoT]
-    B1 --> B100[B100]
-    B1 --> B101[B101]
-    B1 --> B102[B102]
-    B1 --> B103[B103]
-    B1 --> B104[B104]
-    B1 --> B106[B106]
-    B1 --> B107[B107]
-    B1 --> B108[B108]
-    B1 --> B151[B151]
-    B1 --> B152[B152]
-    B1 --> B153[B153]
-    B1 --> B154[B154]
-    B1 --> B155[B155]
-    B1 --> B182[B182]
-
-    MOD --> B2[B2XX Metering]
-    B2 --> B201[B201]
-    B2 --> B202[B202]
-
-    MOD --> B3[B3XX Input/Interface]
-    B3 --> B302[B302]
-    B3 --> B303[B303]
-
-    MOD --> B4[B4XX Drivers]
-    B4 --> B402[B402]
-    B4 --> B403[B403]
-    B4 --> B404[B404]
-```
-
-### Sensor, Power, and Motherboard Segments
-
-```mermaid
-graph LR
-    MOD[Module Repositories]
-
-    MOD --> B5[B5XX Sensors]
-    B5 --> B501[B501]
-    B5 --> B502[B502]
-    B5 --> B503[B503]
-    B5 --> B504[B504]
-    B5 --> B505[B505]
-    B5 --> B506[B506]
-    B5 --> B510[B510]
-    B5 --> B520[B520]
-
-    MOD --> B6[B6XX Legacy/Misc]
-    B6 --> B601[B601]
-
-    MOD --> B8[B8XX Power]
-    B8 --> B801[B801]
-    B8 --> B802[B802]
-
-    MOD --> B9[B9XX Motherboards]
-    B9 --> B901[B901]
-    B9 --> B902[B902]
-    B9 --> B903[B903]
-    B9 --> B905[B905]
-    B9 --> B910[B910]
-```
-
-### Product / System Repositories
-
-```mermaid
-graph LR
-    PROD[Product Repositories]
-    PROD --> P101[P101]
-    PROD --> P401[P401]
-    PROD --> P402[P402]
-    PROD --> P403[P403]
-    PROD --> P511[P511]
-    PROD --> P520[P520]
-    PROD --> P902[P902]
+mindmap
+  root((Akkoyun-Hardware))
+    Shared References
+      Hardware_Template
+      .github
+      Electronic_Modules
+    B0XX MCU
+      B001
+    B1XX IoT
+      B100
+      B101
+      B102
+      B103
+      B104
+      B106
+      B107
+      B108
+      B151
+      B152
+      B153
+      B154
+      B155
+      B182
+    B2XX Metering
+      B201
+      B202
+    B3XX Input / Interface
+      B302
+      B303
+    B4XX Drivers
+      B402
+      B403
+      B404
+    B5XX Sensors
+      B501
+      B502
+      B503
+      B504
+      B505
+      B506
+      B510
+      B520
+    B6XX Legacy / Misc
+      B601
+    B8XX Power
+      B801
+      B802
+    B9XX Motherboards
+      B901
+      B902
+      B903
+      B905
+      B910
+    PXXX Products / Systems
+      P101
+      P401
+      P402
+      P403
+      P511
+      P520
+      P902
 ```
 
 ## 📚 Teknik Referanslar
